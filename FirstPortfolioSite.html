@@ -8,32 +8,35 @@
         color: darkcyan;
        }
 
-       h2 {margin-left: 60px}
-       p {margin-left:60px}
-       h3 {margin-left:60px}
-
-div#sites{margin-left:60px;
-          margin-top: 60px}
-          
-div#video {
-   
-}
-div#email {margin-left: 60px}
+h2{margin-left: 170px}
 
 div#upper_menu {
    float: right;
    margin-right: 150px;
    background-color:transparent; border-color:transparent; }
 
+div#video{
+    text-align: center;
+    auto: 0px;
+    display: block;
+    width: 100px;
+    margin-left: 500px;
+}
+
 button {background-color:transparent; 
         border-color:transparent;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+        border-radius: 5px;
        }
 
-    button:hover{
+ul{ 
+    border-right: 1px solid gray; 
+    padding: 20px;
+    margin: 20px;
+    display: block;
+    width: 100px;
+}
+
+button:hover{
    color: darkblue;
    background-color: aliceblue;
    border-color: transparent;
@@ -57,37 +60,42 @@ button {background-color:transparent;
  <button><a href=""> Contact Me</a></button>
 </div>
 
-<div id="sites">
 <ul>
 	  <li><a href="https://www.linkedin.com/in/hyejin-kim-016889103/" target="_blank">Linkedin </a>  </li>
 	  <li><a href="https://github.com/matmola" target="_blank">	Github </a></li>
 	 <li><a href="https://blog.naver.com/jinii20" target="_blank">Blog</a>	 </li>
 
 </ul>
-</div>
+
 
 <body>
-<h1 align="middle" style="color:navy;">  Hi, I'am HJ </h1>
+<h1 align="middle" style="color:navy;">  Welcome! </h1>
 
-<!-- 사진 이미지 제거용
-<img src="images/rabbit1.jpg" width="35%" align="right">
---> 
+
+
 <h2> <strong> Frontend Developer</strong> </h2>
 <p> Studying HTML, CSS, JavaScript </p> <br>
 
 
-
-<div id= "video">
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/qcSSpoTrbXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></div>
+<div id="video">
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/qcSSpoTrbXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+</div>
 
 <h3> Do you want to get a newsletter every weekend? <br> Just let me know your email! </h3>
 <p style="font-size: 8px; color:grey;"> Don't worry! It's not really Working! </p>
-
-<div id="email">
-<input type="text" name="your email" placeholder="your email address"> <button>send</button> <br> </div>
+<input type="text" name="your email" placeholder="your email address"> <button>send</button> <br>
 
 <p> Check if you are having a great day :3 <input type="checkbox" name="checking"> </p>
 
+<p><strong>Choose your favorite animal here!</strong></p>
+<input list="animals" name="animal" id="animal">
+<datalist id="animals">
+ <option value = "Cat">
+ <option value = "Dog">
+ <option value = "Chicken">
+ <option value = "Cow">
+ <option value = "Pig">
+</datalist>
 
 <p>
 	
