@@ -10,6 +10,16 @@
 
 h2{margin-left: 170px}
 
+#grid ol{             
+      display: grid; 
+      border-right:1px solid gray; 
+      width: 100px;  /*ol 블럭 자체의 폭을 설정시켜서 테두리 당겨오게함! */
+      margin: 0;
+      padding: 20px;
+    }
+        grid-template-columns: 150px 1fr;
+    }
+
 div#upper_menu {
    float: right;
    margin-right: 150px;
@@ -43,6 +53,7 @@ button:hover{
    
  }    
 
+.contents { margin-right: 10px; }
 </style>
 <title>HJPortFolioSite</title>
 </head>
@@ -60,12 +71,13 @@ button:hover{
  <button><a href=""> Contact Me</a></button>
 </div>
 
+<div id="grid">
 <ul>
 	  <li><a href="https://www.linkedin.com/in/hyejin-kim-016889103/" target="_blank">Linkedin </a>  </li>
 	  <li><a href="https://github.com/matmola" target="_blank">	Github </a></li>
 	 <li><a href="https://blog.naver.com/jinii20" target="_blank">Blog</a>	 </li>
 
-</ul>
+</ul></div>
 
 
 <body>
@@ -73,7 +85,7 @@ button:hover{
 
 
 
-<h2> <strong> Frontend Developer</strong> </h2>
+<h2 class="contents"> <strong> Frontend Developer</strong> </h2>
 <p> Studying HTML, CSS, JavaScript </p> <br>
 
 
@@ -81,9 +93,9 @@ button:hover{
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/qcSSpoTrbXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 </div>
 
-<h3> Do you want to get a newsletter every weekend? <br> Just let me know your email! </h3>
+<h3 class="contents"> Do you want to get a newsletter every weekend? <br> Just let me know your email! </h3>
 <p style="font-size: 8px; color:grey;"> Don't worry! It's not really Working! </p>
-<input type="text" name="your email" placeholder="your email address"> <button>send</button> <br>
+<input type="text" name="your email" placeholder="your email address"> <button type="submit">send</button> <br>
 
 <p> Check if you are having a great day :3 <input type="checkbox" name="checking"> </p>
 
