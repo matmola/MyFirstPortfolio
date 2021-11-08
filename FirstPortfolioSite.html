@@ -23,8 +23,7 @@ h2{margin-left: 170px}
 div#upper_menu {
    float: right;
    margin-right: 150px;
-   background-color:transparent; border-color:transparent;
-   }
+   background-color:transparent; border-color:transparent; }
 
 div#video{
     text-align: center;
@@ -56,13 +55,12 @@ button:hover{
 
 .contents { margin-right: 10px; }
 </style>
-
 <title>HJPortFolioSite</title>
 </head>
 
 
 
-<div align="right" style="border: 1px solid transparent; height:20psx;">
+<div id = "upper_menu">
   
  <button><a href=""> Hyejin </a></button>
  <button><a href=""> Home</a></button>  
@@ -71,8 +69,21 @@ button:hover{
  <button><a href=""> Services </a></button>
  <button><a href=""> Portfolio </a></button>
  <button><a href=""> Contact Me</a></button>
+
+
 </div>
-<hr>
+
+ <input type="button" value="night" onclick="
+   document.querySelector('body').style.backgroundColor='black';
+   document.querySelector('body').style.color='white';
+   alert('The page is changed into night mode')
+   ">
+<input type="button" value="day" onclick="
+   document.querySelector('body').style.backgroundColor='white';
+   document.querySelector('body').style.color='black';
+   alert('The page is changed into day mode')
+   ">
+
 <div id="grid">
 <ul>
 	  <li><a href="https://www.linkedin.com/in/hyejin-kim-016889103/" target="_blank">Linkedin </a>  </li>
@@ -83,7 +94,9 @@ button:hover{
 
 
 <body>
-<h1 align="middle" style="color:navy;">  Welcome! </h1>
+<h1 align="middle" style="color:navy;">  Welcome! 
+
+</h1>
 
 
 
@@ -92,12 +105,12 @@ button:hover{
 
 
 <div id="video">
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/qcSSpoTrbXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p><iframe width="400" height="200" src="https://www.youtube.com/embed/qcSSpoTrbXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 </div>
 
 <h3 class="contents"> Do you want to get a newsletter every weekend? <br> Just let me know your email! </h3>
 <p style="font-size: 8px; color:grey;"> Don't worry! It's not really Working! </p>
-<input type="text" name="your email" placeholder="your email address"> <button type="submit">send</button> <br>
+<input type="text" name="your email" placeholder="your email address" onchange=" alert('Make sure you type the right email address!')"> <button type="submit" onclick=" alert('not working!')">send</button> <br>
 
 <p> Check if you are having a great day :3 <input type="checkbox" name="checking"> </p>
 
