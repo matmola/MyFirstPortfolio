@@ -1,0 +1,52 @@
+
+       a {
+        text-decoration: none;
+        color: darkcyan;
+       }
+
+h2{margin-left: 170px}
+
+#grid ol{             
+      display: grid; 
+      border-right:1px solid gray; 
+      width: 100px;  /*ol 블럭 자체의 폭을 설정시켜서 테두리 당겨오게함! */
+      margin: 0;
+      padding: 20px;
+    }
+        grid-template-columns: 150px 1fr;
+    }
+
+div#upper_menu {
+   float: right;
+   margin-right: 150px;
+   background-color:transparent; border-color:transparent; }
+
+div#video{
+    text-align: center;
+    auto: 0px;
+    display: block;
+    width: 100px;
+    margin-left: 500px;
+}
+
+button {background-color:transparent; 
+        border-color:transparent;
+        border-radius: 5px;
+       }
+
+ul{ 
+    border-right: 1px solid gray; 
+    padding: 20px;
+    margin: 20px;
+    display: block;
+    width: 100px;
+}
+
+button:hover{
+   color: darkblue;
+   background-color: aliceblue;
+   border-color: transparent;
+   
+ }    
+
+.contents { margin-right: 10px; }

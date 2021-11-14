@@ -2,65 +2,12 @@
 <html>
 <head>
 <meta charset="utf-8">
-<style type="text/css">
-       a {
-        text-decoration: none;
-        color: darkcyan;
-       }
-
-h2{margin-left: 170px}
-
-#grid ol{             
-      display: grid; 
-      border-right:1px solid gray; 
-      width: 100px;  /*ol 블럭 자체의 폭을 설정시켜서 테두리 당겨오게함! */
-      margin: 0;
-      padding: 20px;
-    }
-        grid-template-columns: 150px 1fr;
-    }
-
-div#upper_menu {
-   float: right;
-   margin-right: 150px;
-   background-color:transparent; border-color:transparent; }
-
-div#video{
-    text-align: center;
-    auto: 0px;
-    display: block;
-    width: 100px;
-    margin-left: 500px;
-}
-
-button {background-color:transparent; 
-        border-color:transparent;
-        border-radius: 5px;
-       }
-
-ul{ 
-    border-right: 1px solid gray; 
-    padding: 20px;
-    margin: 20px;
-    display: block;
-    width: 100px;
-}
-
-button:hover{
-   color: darkblue;
-   background-color: aliceblue;
-   border-color: transparent;
-   
- }    
-
-.contents { margin-right: 10px; }
-</style>
+<link rel="stylesheet" href="style.css">
 <title>HJPortFolioSite</title>
 </head>
 
 
-
-<div id = "upper_menu">
+<header>
   
  <button><a href=""> Hyejin </a></button>
  <button><a href=""> Home</a></button>  
@@ -71,7 +18,7 @@ button:hover{
  <button><a href=""> Contact Me</a></button>
 
 
-</div>
+
 
  <input type="button" value="night" onclick="
    document.querySelector('body').style.backgroundColor='black';
@@ -83,27 +30,26 @@ button:hover{
    document.querySelector('body').style.color='black';
    alert('The page is changed into day mode')
    ">
+</header>
 
-<div id="grid">
+<aside>
 <ul>
 	  <li><a href="https://www.linkedin.com/in/hyejin-kim-016889103/" target="_blank">Linkedin </a>  </li>
 	  <li><a href="https://github.com/matmola" target="_blank">	Github </a></li>
 	 <li><a href="https://blog.naver.com/jinii20" target="_blank">Blog</a>	 </li>
 
-</ul></div>
+</ul></aside>
 
-
+<nav>
 <body>
-<h1 align="middle" style="color:navy;">  Welcome! 
-
+<h1 align="middle" style="color:navy;">  Hyejin 
 </h1>
-
-
-
 <h2 class="contents"> <strong> Frontend Developer</strong> </h2>
 <p> Studying HTML, CSS, JavaScript </p> <br>
+</body>
+</nav>
 
-
+<main>
 <div id="video">
 <p><iframe width="400" height="200" src="https://www.youtube.com/embed/qcSSpoTrbXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 </div>
@@ -119,13 +65,13 @@ button:hover{
 <datalist id="animals">
  <option value = "Cat">
  <option value = "Dog">
- <option value = "Chicken">
- <option value = "Cow">
- <option value = "Pig">
+ <option value = "Hamster">
+ <option value = "Iguana">
+ <option value = "Rabbit">
 </datalist>
 
 <p>
-	
+</main>	
 <div id="disqus_thread"></div>
 <script>
     /**
