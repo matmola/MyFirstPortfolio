@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+       a {
+        text-decoration: none;
+        color: darkcyan;
+       }
+
+h2{margin-left: 170px}
+
+#grid ol{             
+      display: grid; 
+      border-right:1px solid gray; 
+      width: 100px;  /*ol 블럭 자체의 폭을 설정시켜서 테두리 당겨오게함! */
+      margin: 0;
+      padding: 20px;
+    }
+        grid-template-columns: 150px 1fr;
+    }
+
+div#upper_menu {
+   float: right;
+   margin-right: 150px;
+   background-color:transparent; border-color:transparent; }
+
+div#video{
+    text-align: center;
+    auto: 0px;
+    display: block;
+    width: 100px;
+    margin-left: 500px;
+}
+
+button {background-color:transparent; 
+        border-color:transparent;
+        border-radius: 5px;
+       }
+
+ul{ 
+    border-right: 1px solid gray; 
+    padding: 20px;
+    margin: 20px;
+    display: block;
+    width: 100px;
+}
+
+button:hover{
+   color: darkblue;
+   background-color: aliceblue;
+   border-color: transparent;
+   
+ }    
+
+.contents { margin-right: 10px; }
+</style>
+<title>HJPortFolioSite</title>
+</head>
+
+
+
+<div id = "upper_menu">
+  
+ <button><a href=""> Hyejin </a></button>
+ <button><a href=""> Home</a></button>  
+ <button><a href=""> About</a></button> 
+ <button><a href=""> Skills </a></button>
+ <button><a href=""> Services </a></button>
+ <button><a href=""> Portfolio </a></button>
+ <button><a href=""> Contact Me</a></button>
+
+
+</div>
+
+ <input type="button" value="night" onclick="
+   document.querySelector('body').style.backgroundColor='black';
+   document.querySelector('body').style.color='white';
+   alert('The page is changed into night mode')
+   ">
+<input type="button" value="day" onclick="
+   document.querySelector('body').style.backgroundColor='white';
+   document.querySelector('body').style.color='black';
+   alert('The page is changed into day mode')
+   ">
+
+<div id="grid">
+<ul>
+      <li><a href="https://www.linkedin.com/in/hyejin-kim-016889103/" target="_blank">Linkedin </a>  </li>
+      <li><a href="https://github.com/matmola" target="_blank"> Github </a></li>
+     <li><a href="https://blog.naver.com/jinii20" target="_blank">Blog</a>   </li>
+
+</ul></div>
+
+
+<body>
+<h1 align="middle" style="color:navy;">  Welcome! 
+
+</h1>
+
+
+
+<h2 class="contents"> <strong> Frontend Developer</strong> </h2>
+<p> Studying HTML, CSS, JavaScript </p> <br>
+
+
+<div id="video">
+<p><iframe width="400" height="200" src="https://www.youtube.com/embed/qcSSpoTrbXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+</div>
+
+<h3 class="contents"> Do you want to get a newsletter every weekend? <br> Just let me know your email! </h3>
+<p style="font-size: 8px; color:grey;"> Don't worry! It's not really Working! </p>
+<input type="text" name="your email" placeholder="your email address" onchange=" alert('Make sure you type the right email address!')"> <button type="submit" onclick=" alert('not working!')">send</button> <br>
+
+<p> Check if you are having a great day :3 <input type="checkbox" name="checking"> </p>
+
+<p><strong>Choose your favorite animal here!</strong></p>
+<input list="animals" name="animal" id="animal">
+<datalist id="animals">
+ <option value = "Cat">
+ <option value = "Dog">
+ <option value = "Chicken">
+ <option value = "Cow">
+ <option value = "Pig">
+</datalist>
+
+<p>
+    
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://firstportfoliosite.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</p>
+
+<!--Start of Tawk.to Script : not really working now! -->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/615d23fdd326717cb684f579/1fh9t968j';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+</html>
