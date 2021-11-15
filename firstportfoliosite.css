@@ -12,8 +12,7 @@ h2{margin-left: 170px}
       width: 100px;  /*ol 블럭 자체의 폭을 설정시켜서 테두리 당겨오게함! */
       margin: 0;
       padding: 20px;
-    }
-        grid-template-columns: 150px 1fr;
+      grid-template-columns: 150px 1fr;
     }
 
 div#upper_menu {
