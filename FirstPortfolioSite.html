@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="firstportfoliosite.css">
 <title>HJPortFolioSite</title>
 </head>
-<body>
 
+<body>
+   <div class="container">
+      <div class="item">
 <header>
   
  <button><a href=""> Hyejin </a></button>
@@ -17,7 +20,7 @@
  <button><a href=""> Portfolio </a></button>
  <button><a href=""> Contact Me</a></button>
 
-
+ <div id=nightnday>
  <input type="button" value="night" onclick="
    document.querySelector('body').style.backgroundColor='black';
    document.querySelector('body').style.color='white';
@@ -28,17 +31,23 @@
    document.querySelector('body').style.color='black';
    alert('The page is changed into day mode')
    ">
-</header>
+</div>
+</header> </div>
 
+
+ 
+<div class="item">
 <aside>
 <ul>
-	  <li><a href="https://www.linkedin.com/in/hyejin-kim-016889103/" target="_blank">Linkedin </a>  </li>
-	  <li><a href="https://github.com/matmola" target="_blank">	Github </a></li>
-	 <li><a href="https://blog.naver.com/jinii20" target="_blank">Blog</a>	 </li>
+	<li><a href="https://www.linkedin.com/in/hyejin-kim-016889103/" target="_blank">Linkedin </a>  </li>
+	<li><a href="https://github.com/matmola" target="_blank">	Github </a></li>
+	<li><a href="https://blog.naver.com/jinii20" target="_blank">Blog</a>	 </li>
 
 </ul>
 </aside>
+</div>
 
+<div class="item">
 <main>
 <section>
 <h1 align="middle" style="color:navy;">  Hyejin 
@@ -93,7 +102,10 @@
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </p>
 </footer>
-<!--Start of Tawk.to Script : not really working now! -->
+</div>
+
+</div>
+<!--Start of Tawk.to Script -->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){

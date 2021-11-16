@@ -1,5 +1,12 @@
 
-       a {
+.container {
+	grid-template-areas:
+		"header header header"
+		"   ul    main    main   "
+		"   .     .      .   "
+		"footer footer footer";
+}
+      a {
         text-decoration: none;
         color: darkcyan;
        }
@@ -14,7 +21,11 @@ h2{margin-left: 170px}
       padding: 20px;
       grid-template-columns: 150px 1fr;
     }
-
+div#nightnday{
+    float: right;
+    margin-right: 150px;
+    background-color:transparent; border-color:transparent;
+}
 div#upper_menu {
    float: right;
    margin-right: 150px;
