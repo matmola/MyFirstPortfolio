@@ -1,4 +1,11 @@
 
+#nightnday{
+    background-color:transparent; 
+        border-color:darkcyan;
+        color:darkcyan;
+        border-radius: 5px;
+}
+
 .container {
 	grid-template-areas:
 		"header header header"
