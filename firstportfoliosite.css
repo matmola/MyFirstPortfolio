@@ -1,3 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+.menu {
+    margin-top:10px;
+    width : 120px;
+    background-color: rgb(255, 246, 246);
+}
+
+.content{
+    margin-left : 10px;
+    margin-top: 10px;
+    background-color : whitesmoke;
+    text-align:center;
+    width:100vw;
+    height:80vh;
+}
+
+.middle{
+    display: flex;
+}
+
 
 #nightnday{
     background-color:transparent; 
@@ -6,28 +29,15 @@
         border-radius: 5px;
 }
 
-.container {
-	grid-template-areas:
-		"header header header"
-		"   ul    main    main   "
-		"   .     .      .   "
-		"footer footer footer";
-}
+ 
       a {
         text-decoration: none;
         color: darkcyan;
        }
 
-h2{margin-left: 170px}
+ 
 
-#grid ol{             
-      display: grid; 
-      border-right:1px solid gray; 
-      width: 100px;  /*ol 블럭 자체의 폭을 설정시켜서 테두리 당겨오게함! */
-      margin: 0;
-      padding: 20px;
-      grid-template-columns: 150px 1fr;
-    }
+ 
 div#nightnday{
     float: right;
     margin-right: 150px;
@@ -38,13 +48,9 @@ div#upper_menu {
    margin-right: 150px;
    background-color:transparent; border-color:transparent; }
 
-div#video{
-    text-align: center;
-    auto: 0px;
-    display: block;
-    width: 100px;
-    margin-left: 500px;
-}
+   #contact_me{
+       color:purple;
+   } 
 
 button {background-color:transparent; 
         border-color:transparent;
@@ -65,5 +71,5 @@ button:hover{
    border-color: transparent;
    
  }    
-
-.contents { margin-right: 10px; }
+ 
+ 
