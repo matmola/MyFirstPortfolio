@@ -14,11 +14,15 @@
     background-color : whitesmoke;
     text-align:center;
     width:100vw;
-    height:80vh;
+    height:70vh;
 }
 
 .middle{
     display: flex;
+}
+
+iframe{
+    padding-top:30px;
 }
 
 
